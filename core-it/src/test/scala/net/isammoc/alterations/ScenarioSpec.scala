@@ -3,7 +3,8 @@ package net.isammoc.alterations
 import net.isammoc.alterations.db.DbAlterationTable
 import net.isammoc.alterations.file.FileAlterationReader
 
-import java.sql.{Connection, DriverManager}
+import java.sql.Connection
+import java.sql.DriverManager
 import scala.util.Success
 
 class ScenarioSpec extends DbAlterationSpec {
@@ -30,6 +31,7 @@ class ScenarioSpec extends DbAlterationSpec {
       withConfig { config =>
         copyResources(config.path, "one-down/1.sql", "one-down/2.sql")
         val underTest = new Alterations(config)
+
         underTest.getVersion() shouldBe Success(0)
         underTest.needAlterations() shouldBe Success(true)
         underTest.applyAlterations() shouldBe Success(())

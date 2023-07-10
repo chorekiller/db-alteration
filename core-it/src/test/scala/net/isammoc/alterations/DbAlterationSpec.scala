@@ -6,7 +6,8 @@ import org.scalatest.freespec.AnyFreeSpec
 import org.scalatest.matchers.should
 import org.testcontainers.utility.DockerImageName
 
-import java.nio.file.{Files, Path}
+import java.nio.file.Files
+import java.nio.file.Path
 import scala.util.Using
 
 class DbAlterationSpec extends AnyFreeSpec with should.Matchers with TestContainerForAll {

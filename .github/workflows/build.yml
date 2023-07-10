@@ -55,5 +55,4 @@ jobs:
             "all scalafmtCheckAll" \
             "all scalafixAll --check" \
             "all compile" \
-            "all test" \
-            "all IntegrationTest / test"
+            "all test"
