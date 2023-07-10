@@ -2,7 +2,7 @@ import Dependencies._
 
 inThisBuild(
   List(
-    scalaVersion               := "2.13.10",
+    scalaVersion               := "2.13.11",
     version                    := "0.1.0-SNAPSHOT",
     organization               := "net.isammoc.chorekiller",
     organizationName           := "ChoreKiller",
