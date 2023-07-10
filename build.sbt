@@ -2,12 +2,12 @@ import Dependencies._
 
 inThisBuild(
   List(
-    scalaVersion               := "2.13.11",
-    version                    := "0.1.0-SNAPSHOT",
-    organization               := "net.isammoc.chorekiller",
-    organizationName           := "ChoreKiller",
-    semanticdbEnabled          := true, // enable SemanticDB
-    semanticdbVersion          := scalafixSemanticdb.revision,
+    scalaVersion      := "2.13.10",
+    version           := "0.1.0-SNAPSHOT",
+    organization      := "net.isammoc.chorekiller",
+    organizationName  := "ChoreKiller",
+    semanticdbEnabled := true, // enable SemanticDB
+    semanticdbVersion := scalafixSemanticdb.revision,
     scalafixScalaBinaryVersion := "2.13"
   )
 )
